@@ -7,9 +7,6 @@ from apps.core.models import (
 # Create your views here.
 def home(request):
     
-    #========================Intro===============================
-    
-    
     #=======================Get In Touch=========================
     if request.method == 'POST':
         name = request.POST.get('name')

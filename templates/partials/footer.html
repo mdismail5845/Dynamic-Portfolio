@@ -66,55 +66,12 @@
         </div>
         <div class="col-lg-7 col-md-6">
           {% for links in contact_links %}
-          <a href="{{ links.link }}"><i class="{{ links.icon_class }}"></i></a>
+          <a href="{{ links.link }}" target="_blank"><i class="{{ links.icon_class }}"></i></a>
           {% endfor %}
         </div>
       </div>
     </div>
   </div>
-
-  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
-  <!-- <div class="container mt-5">
-    <div class="row text-white justify-content-center mt-3 pb-3">
-      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-        <h5 class="text-capitalize fw-bold">Ismail | Python & Django Developer</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <p class="lh-lg">
-          Aspiring backend developer focused on building efficient and scalable web applications using Python and Django.
-        </p>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">Products</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <ul class="list-inline campany-list">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">useful links</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <ul class="list-inline campany-list">
-          <li><a href="#"> Your Account</a></li>
-          <li><a href="#">Become an Affiliate</a></li>
-          <li><a href="#">create an account</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">contact</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <ul class="list-inline campany-list">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
 
   <!-- START THE COPYRIGHT INFO  -->
   <div class="footer-bottom pt-3">
@@ -143,7 +100,7 @@
     <script type="text/javascript">
       const lightbox = GLightbox({
         'touchNavigation': true,
-        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+        'href': '{{ intro.yt_link }}',
         'type': 'video',
         'source': 'youtube', //vimeo, youtube or local
         'width': 900,

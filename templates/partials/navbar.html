@@ -6,7 +6,7 @@
     <div class="container">
       <a class="navbar-brand" href="">
         <span style="font-family: 'Gveret Levin', cursive; font-weight: bold; font-style: italic;">ISMAIL</span>
-        {% comment %} <img src="{% static "images/logo.png" %}" alt="logo image"> {% endcomment %}
+        {% comment %} <img src="{{ intro.logo.url }}" alt="logo image"> {% endcomment %}
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -15,18 +15,27 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url "home" %}">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#portfolio">projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
           </li>
         </ul>
-        <button type="button" class="rounded-pill btn-rounded">
-          {{ intro.number }}
-          <span>
-            <i class="fas fa-phone-alt"></i>
-          </span>
-        </button>
+        <a href="{{ intro.wa_link }}" target="_blank">
+          <button type="button" class="rounded-pill btn-rounded">
+            {{ intro.number }}
+            <span>
+              <i class="fab fa-whatsapp"></i>
+            </span>
+          </button>
+        </a>
+        <!-- GitHub Button -->
+          <a href="{{ intro.git_link }}" target="_blank">
+            <button type="button" class="btn-github">
+            <span>
+              <i class="fab fa-github"></i>
+            </span>
+          </button>
+          </a>
       </div>
     </div>
   </nav>

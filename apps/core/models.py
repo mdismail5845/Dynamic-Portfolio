@@ -12,6 +12,9 @@ class Intro(models.Model):
     description = models.TextField()
     cv_file = models.FileField(upload_to='core/pdfs', blank=True, null=True)
     intro_image = models.ImageField(upload_to='core/images', blank=True, null=True)
+    wa_link = models.URLField(blank=True, null=True)
+    git_link = models.URLField(blank=True, null=True)
+    yt_link = models.URLField(blank=True, null=True)
     
     class Meta:
         verbose_name_plural = "Introduction"

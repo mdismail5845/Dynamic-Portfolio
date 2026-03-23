@@ -8,7 +8,7 @@ from apps.core.models import (
 # ==================== Intro ====================
 @admin.register(Intro)
 class IntroAdmin(admin.ModelAdmin):
-    list_display = ('title', 'logo', 'name', 'number', 'cv_file','intro_image','description')
+    list_display = ('title', 'logo', 'name', 'number', 'cv_file','intro_image','wa_link','git_link','yt_link','description')
     search_fields = ('name', 'title', 'description')
     
     def has_add_permission(self, request):
